@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Teste JavaScript</title>
+
+
+        <script>
+            var quebrada = false;
+                function mudaLampada(tipo) {
+                               
+                if (!quebrada){
+                document.getElementById("luz").src = "_imagens/" + tipo + ".jpg";
+                    if (tipo == 'lampada-quebrada') {
+                        quebrada = true;
+                    }
+                }
+            }
+        </script>
+
+
+
+    </head>
+    <body>
+        <h1>Acenda a lampada</h1>
+        <img src="../aulas_guanabara_html/projeto-glass-html5/_imagens/lampada-apagada.jpg" id= "luz" onmousemove="mudaLampada('lampada-acesa')" onmouseout="mudaLampada('lampada-apagada')" onclick="mudaLampada('lampada-quebrada')"/>
+
+    </body>
+</html>
+
+<!-- 
+    
+    ---------------manipulando objetos (PASSAGEM DE PARAMETROS MAIS SIMPLIFICADO--------------
+    
+    
+    FOI CRIADO UMA FUNÇÃO E NELA CONTEM PARAMETRO 1, 2, E 3 CADA ESTADO DA LAMPADA FOI INSERIDO NA VARIAVEL ARQUIVO QUE ACIONARA DEPENDENDO DA AÇÃO/ PARAMETRO DO BLOCO PRINCIPAL /////////// ONMOUSEMOVE (AO MOVER O MOUSE. ONMOUSEOUT = AO TIRAR O MOUSE E ONCLICK = AO CLICAR NO MOUSE
+    
+    getElementById = pega um elemento pelo seu id
+    
+    )-->

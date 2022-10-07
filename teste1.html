@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Teste JavaScript</title>
+
+        <script>
+            function acendeLampada() {
+                document.getElementById("luz").src = "../aulas_guanabara_html/projeto-glass-html5/_imagens/lampada-acesa.jpg";
+            }
+            function apagaLampada() {
+                document.getElementById("luz").src = "../aulas_guanabara_html/projeto-glass-html5/_imagens/lampada-apagada.jpg";
+            }
+            function quebraLampada() {
+                document.getElementById("luz").src = "../aulas_guanabara_html/projeto-glass-html5/_imagens/lampada-quebrada.jpg"
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1>Acenda a lampada</h1>
+        <img src="../aulas_guanabara_html/projeto-glass-html5/_imagens/lampada-apagada.jpg" id= "luz" onmousemove="acendeLampada()" onmouseout="apagaLampada()" onclick="quebraLampada()"/>
+
+    </body>
+</html>
+
+<!-- 
+    
+    ---------------manipulando objetos--------------
+    FOI CRIADA FUNÇÕES CADA UMA COM UM COM ESTADO DIFERENTE DA LAMPADA REPRESENTADA POR IMAGEM, DAI CHAMEI CADA FUNÇÃO NO BODY DO ARQUIVO /////////// ONMOUSEMOVE (AO MOVER O MOUSE. ONMOUSEOUT = AO TIRAR O MOUSE E ONCLICK = AO CLICAR NO MOUSE
+    
+    getElementById = pega um elemento pelo seu id
+    
+    )-->
